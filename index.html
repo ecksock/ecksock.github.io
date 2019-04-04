@@ -17,7 +17,6 @@
 		<link href="/assets/fa/css/all.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/eck_logo.png">
-		
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$.getJSON('https://api.twitch.tv/kraken/streams/ecksock5?client_id=ixytrw2is3b5gtydk04s5j2i96kpkz', function(channel) {
@@ -49,6 +48,8 @@
 
 	</head>
 	<body class="is-preload">
+			<script src="pace/pace.js"></script>
+			<link href="pace/themes/modern.css" rel="stylesheet" />
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -62,7 +63,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Ecksock</h1>
-								<p>"Ecksock" a variety and Overwatch <a href="twitch.tv/">twitch.tv</a> streamer.</p>
+								<p>"Ecksock" a variety and Overwatch <a href="https://twitch.tv/" target="_blank">twitch.tv</a> streamer.</p>
 							</div>
 						</div>
 						<nav>	
@@ -95,13 +96,13 @@
 				
 								<span class="center-img"><img src="images/eck_logo.png" style="width:128px;height:128px;" alt="" /></span>
 								<div class="align-center">
-								<p class="primary button center"><span class="icon fa-twitch"></span> <a href="https://twitch.tv/ecksock5" target="_blank">Twitch Stream</a></p>
+								<p class="primary button center"><span class="icon fa-twitch"></span> <a href="/twitch" target="_blank">Twitch Stream</a></p>
 								
-								<p class="primary button center"><span class="fab fa-discord"></span> <a href="http://invite.gg/ecksock" target="_blank">Discord Server</a></p>
+								<p class="primary button center"><span class="fab fa-discord"></span> <a href="/discord" target="_blank">Discord Server</a></p>
 								
-								<p class="primary button center"><span class="fas fa-tshirt"></span> <a href="https://streamlabs.com/ecksock5/#/merch" target="_blank">Merch</a></p>
+								<p class="primary button center"><span class="fas fa-tshirt"></span> <a href="/merch" target="_blank">Merch</a></p>
 									
-								<p class="primary button center"><span class="fas fa-money-check-alt"></span> <a href="https://streamlabs.com/ecksock5" target="_blank">Donations</a></p>
+								<p class="primary button center"><span class="fas fa-money-check-alt"></span> <a href="/donate" target="_blank">Donations</a></p>
 								</div>
 							</article>
 
@@ -111,11 +112,10 @@
 								<h2 class="major">Live</h2>
 
 								<span class="center-img"><img src="images/eck_logo.png" style="width:128px;height:128px;" alt="" /></span>
-								
-								<!-- <iframe src="https://www.twitch.tv/popout/ecksock5/extensions/naty2zwfp7vecaivuve8ef1hohh6bo/panel"></iframe> -->
+							
 								<div class="center-img">
 								<iframe 
-								src="https://player.twitch.tv/?channel=ecksock5"
+								src="https://player.twitch.tv/?channel=ecksock5&autoplay=false"
 								height="400"
 								width="760"
 								frameborder="0"
@@ -161,15 +161,15 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="https://twitch.tv/ecksock5" class="icon fa-twitch"><span class="label"></span></a></li>
-									<li><a href="http://invite.gg/ecksock" class="fab fa-discord"><span class="label"></span></a></li>
-									<li><a href="https://streamlabs.com/ecksock5/#/merch" class="fas fa-tshirt"><span class="label"></span></a></li>
-									<li><a href="https://streamlabs.com/ecksock5" class="fas fa-money-check-alt"><span class="label"></span></a></li>
+									<li><a href="/twitch" class="icon fa-twitch"><span class="label"></span></a></li>
+									<li><a href="/discord" class="fab fa-discord"><span class="label"></span></a></li>
+									<li><a href="/merch" class="fas fa-tshirt"><span class="label"></span></a></li>
+									<li><a href="/donate" class="fas fa-money-check-alt"><span class="label"></span></a></li>
 								</ul>
 							</article>
 
 						<!-- Elements -->
-							<article id="elements">
+							<!-- <article id="elements">
 								<h2 class="major">Elements</h2>
 
 								<section>
@@ -406,7 +406,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</form>
-								</section>
+								</section> -->
 
 							</article>
 					
