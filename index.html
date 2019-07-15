@@ -19,17 +19,17 @@
 		<link rel="icon" href="images/eck_logo.png">
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$.getJSON('https://api.twitch.tv/kraken/streams/ecksock5?client_id=ixytrw2is3b5gtydk04s5j2i96kpkz', function(channel) {
+				$.getJSON('https://api.twitch.tv/kraken/streams/ecksock?client_id=ixytrw2is3b5gtydk04s5j2i96kpkz', function(channel) {
 					var element = document.getElementById("twitchlive");
 				
 	if(channel["stream"] == null) { 
 		//offline
 		element.innerHTML = "Offline"
-		console.log("Found ecksock5 is offline.");
+		console.log("Found ecksock is offline.");
 	} else {
 		//online
 		element.innerHTML = "Live"
-		console.log("Found ecksock5 is online.");
+		console.log("Found ecksock is online.");
 	}
 });
 			});
@@ -115,7 +115,7 @@
 							
 								<div class="center-img">
 								<iframe 
-								src="https://player.twitch.tv/?channel=ecksock5&autoplay=false"
+								src="https://player.twitch.tv/?channel=ecksock&autoplay=false"
 								height="400"
 								width="760"
 								frameborder="0"
@@ -126,8 +126,8 @@
 					<div class="center-img">
 					<iframe frameborder="800"
 					scrolling="true"
-					id="ecksock5"
-					src="https://www.twitch.tv/embed/ecksock5/chat?darkpopout"
+					id="ecksock"
+					src="https://www.twitch.tv/embed/ecksock/chat?darkpopout"
 					height="400"
 					width="800">
 					</iframe>
@@ -428,17 +428,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<script type="text/javascript">
 							$(document).ready(function () {
-								$.getJSON('https://api.twitch.tv/kraken/streams/ecksock5?client_id=ixytrw2is3b5gtydk04s5j2i96kpkz', function(channel) {
+								$.getJSON('https://api.twitch.tv/kraken/streams/ecksock?client_id=ixytrw2is3b5gtydk04s5j2i96kpkz', function(channel) {
 									var element = document.getElementById("twitchlive2");
 								
 					if(channel["stream"] == null) { 
 						//offline
 						element.innerHTML = "Offline"
-						console.log("Found ecksock5 is offline.");
+						console.log("Found ecksock is offline.");
 					} else {
 						//online
 						element.innerHTML = "Live 🔴"
-						console.log("Found ecksock5 is online.");
+						console.log("Found ecksock is online.");
 					}
 				
 				
@@ -449,7 +449,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</script>
 					
 					</footer>
-					<section onclick="window.open('https://twitch.tv/ecksock5', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:2px;background-color: #4B367C;border-radius: 4px; width:240px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">&nbsp;&nbsp;<span class="icon fa-twitch" alt=" " height="32">&nbsp;<b id="twitchlive2"></b>
+					<section onclick="window.open('https://twitch.tv/ecksock', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:2px;background-color: #4B367C;border-radius: 4px; width:240px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">&nbsp;&nbsp;<span class="icon fa-twitch" alt=" " height="32">&nbsp;<b id="twitchlive2"></b>
 					</section>
 					
 
